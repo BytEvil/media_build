@@ -2365,12 +2365,12 @@ static inline int fwnode_property_count_u64(struct fwnode_handle *fwnode,
 }
 #endif
 
-#ifdef NEED_FWNODE_GETNAME
+//#ifdef NEED_FWNODE_GETNAME
 static inline const char *fwnode_get_name(const struct fwnode_handle *fwnode)
 {
 	return "name";
 }
-#endif
+//#endif
 
 #ifdef NEED_TIMER_SETUP_ON_STACK
 #define timer_setup_on_stack(timer, callback, flags)        \
